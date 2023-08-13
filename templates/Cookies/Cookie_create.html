@@ -24,7 +24,7 @@
       <div>
         <label for="id_reviewer" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reviewer</label>
         <select name="reviewer" id="id_reviewer">
-          {% for value, choice in form.fields.reviewer.choices %}
+          {% for value, choice in form.fields.owner.choices %}
             <option value="{{ value }}">{{  choice }}</option>
           {% endfor %}
         </select>
