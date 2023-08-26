@@ -6,7 +6,7 @@
 
   <div class="flex">
 
-    <h5 class=" flex-auto mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ Cookie.owner }}</h5>
+    <h5 class=" flex-auto mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ Cookie.name }}</h5>
 
 
     <a href="{% url 'Cookie_update' cookie.pk %}">
@@ -29,10 +29,11 @@
 
   </div>
 
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Reviewed by: Mones</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Reviewed by: {{
+    Cookie.reviewer }}</h5>
 
 
-  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ Cookie.owner }}</p>
+  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ Cookie.description }}</p>
 
 
   <div class="flex items-center">
