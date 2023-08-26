@@ -42,7 +42,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1","0.0.0.0" , ".vercel/app" , "cookies-dev.vercel.app,cookies-2aouru1fh-11mones.vercel.app","cookies-8o8henz23-11mones.vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
